@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <h1>Qualidade das peças da fábrica</h1>
+    <p>Total de peças produzidas: <span id="totalproduzidas"></span></p>
+    <p>Total de peças aprovadas e reprovadas: <span id="totalaprovadas"></span></p>
+    <p>Total de peças reprovadas: <span id="totalreprovadas"></span></p> 
+    <script> 
+    let quantidade = prompt ("Digite o número de peças fabricadas hoje");
+    let qualidade = Number(prompt ("Existe peças aprovadas e reprovadas? \n1 - Sim \n2 - Não"));
+    let pecasreprovadas;
+    let pecasaprovadas;
+    let totalar;
+    if (qualidade = 1) {
+        pecasaprovadas = Number (prompt ("Digite a quantidade de peças aprovadas"));
+        while (qualidade = 2) {
+            pecasreprovadas = Number (prompt ("Digite a quantidade de peças reprovadas"));
+        break}
+    }else{
+        "Opção de qualidade inválida."
+    }
+    totalar = (pecasaprovadas + pecasreprovadas);
+document.getElementById("totalproduzidas").innerHTML = quantidade;
+document.getElementById("totalreprovadas").innerHTML = pecasreprovadas;
+document.getElementById("totalaprovadas").innerHTML = totalar;
+    </script>
+    
+</body>
+</html>
